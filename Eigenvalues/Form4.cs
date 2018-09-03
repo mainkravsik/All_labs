@@ -20,7 +20,8 @@ namespace Eigenvalues
         public double function(double x, double y)
         {
             //return x * y * y;
-            return (-(x + 1) / (Math.Sqrt(-x * x - 2 * x - 3)));
+            return 3*x*x*y+x*x*Math.Exp(x*x*x);
+
         }
         public double funcan(double x)
         {
@@ -168,6 +169,96 @@ namespace Eigenvalues
                 this.Location = new System.Drawing.Point(this.Location.X + (e.X - mousex), this.Location.Y + (e.Y - mousey));
 
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_MouseEnter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label3_MouseEnter(object sender, EventArgs e)
+        {
+            chart1.Series[1].Enabled = false;
+            chart1.Series[2].Enabled = false;
+            chart1.Series[3].Enabled = false;
+            chart1.Series[4].Enabled = false;
+        }
+
+        private void label3_MouseLeave(object sender, EventArgs e)
+        {
+            chart1.Series[1].Enabled = true;
+            chart1.Series[2].Enabled = true;
+            chart1.Series[3].Enabled = true;
+            chart1.Series[4].Enabled = true;
+        }
+
+        private void label4_MouseEnter(object sender, EventArgs e)
+        {
+            chart1.Series[0].Enabled = false;
+            chart1.Series[2].Enabled = false;
+            chart1.Series[3].Enabled = false;
+            chart1.Series[4].Enabled = false;
+        }
+
+        private void label4_MouseLeave(object sender, EventArgs e)
+        {
+            chart1.Series[0].Enabled = true;
+            chart1.Series[2].Enabled = true;
+            chart1.Series[3].Enabled = true;
+            chart1.Series[4].Enabled = true;
+        }
+
+        private void label5_MouseEnter(object sender, EventArgs e)
+        {
+            chart1.Series[0].Enabled = false;
+            chart1.Series[1].Enabled = false;
+            chart1.Series[3].Enabled = false;
+            chart1.Series[4].Enabled = false;
+        }
+
+        private void label5_MouseLeave(object sender, EventArgs e)
+        {
+            chart1.Series[0].Enabled = true;
+            chart1.Series[1].Enabled = true;
+            chart1.Series[3].Enabled = true;
+            chart1.Series[4].Enabled = true;
+        }
+
+        private void label6_MouseEnter(object sender, EventArgs e)
+        {
+            chart1.Series[0].Enabled = false;
+            chart1.Series[1].Enabled = false;
+            chart1.Series[2].Enabled = false;
+            chart1.Series[4].Enabled = false;
+        }
+
+        private void label6_MouseLeave(object sender, EventArgs e)
+        {
+            chart1.Series[0].Enabled = true;
+            chart1.Series[1].Enabled = true;
+            chart1.Series[2].Enabled = true;
+            chart1.Series[4].Enabled = true;
+        }
+
+        private void label7_MouseEnter(object sender, EventArgs e)
+        {
+            chart1.Series[0].Enabled = false;
+            chart1.Series[1].Enabled = false;
+            chart1.Series[2].Enabled = false;
+            chart1.Series[3].Enabled = false;
+        }
+
+        private void label7_MouseLeave(object sender, EventArgs e)
+        {
+            chart1.Series[0].Enabled = true;
+            chart1.Series[1].Enabled = true;
+            chart1.Series[2].Enabled = true;
+            chart1.Series[3].Enabled = true;
         }
     }
 }
