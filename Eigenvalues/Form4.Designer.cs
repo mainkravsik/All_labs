@@ -107,7 +107,7 @@
             series5.ChartArea = "ChartArea1";
             series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series5.Legend = "Legend1";
-            series5.Name = "Милан";
+            series5.Name = "Милн";
             this.chart1.Series.Add(series1);
             this.chart1.Series.Add(series2);
             this.chart1.Series.Add(series3);
@@ -245,6 +245,8 @@
             this.Name = "Form4";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form4_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form4_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

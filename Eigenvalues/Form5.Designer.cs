@@ -36,10 +36,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -123,26 +123,15 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
-            // pictureBox2
+            // label3
             // 
-            this.pictureBox2.Image = global::Eigenvalues.Properties.Resources._1;
-            this.pictureBox2.Location = new System.Drawing.Point(674, 13);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 28);
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(15, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 17);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "X1";
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(126, 70);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(25, 17);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "X2";
             // 
             // label2
             // 
@@ -154,15 +143,26 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Eps";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(126, 70);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 17);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "X2";
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(15, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(25, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "X1";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Eigenvalues.Properties.Resources._1;
+            this.pictureBox2.Location = new System.Drawing.Point(674, 13);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(31, 28);
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Form5
             // 
@@ -176,6 +176,8 @@
             this.Name = "Form5";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form5_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form5_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

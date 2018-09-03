@@ -94,5 +94,21 @@ namespace Eigenvalues
             this.Visible = false;
             _form1.Visible = true;
         }
+        private int mousex = 0; private int mousey = 0;
+        private void Form5_MouseDown(object sender, MouseEventArgs e)
+        {
+            mousex = e.X; mousey = e.Y;
+        }
+
+        private void Form5_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            {
+                this.Location = new System.Drawing.Point(this.Location.X + (e.X - mousex), this.Location.Y + (e.Y - mousey));
+
+            }
+        }
+
+        
     }
 }
