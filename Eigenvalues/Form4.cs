@@ -19,8 +19,8 @@ namespace Eigenvalues
         }
         public double function(double x, double y)
         {
-            //return x * y * y;
-            return 3*x*x*y+x*x*Math.Exp(x*x*x);
+            return x * y * y;
+            //return 3*x*x*y+x*x*Math.Exp(x*x*x);
 
         }
         public double funcan(double x)

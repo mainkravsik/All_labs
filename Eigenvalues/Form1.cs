@@ -20,9 +20,13 @@ namespace Eigenvalues
             InitializeComponent();
             form4 = new Form4(this) { Visible = false };
             form5 = new Form5(this) { Visible = false };
+            form6 = new Form6(this) { Visible = false };
+            form7 = new Form7(this) { Visible = false };
         }
         private Form4 form4;
         private Form5 form5;
+        private Form6 form6;
+        private Form7 form7;
 
 
         private void Form2_Load(object sender, EventArgs e)
@@ -134,6 +138,18 @@ namespace Eigenvalues
         {
             this.Visible = false;
             form5.Visible = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            form6.Visible = true;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            form7.Visible = true;
         }
     }
 }
